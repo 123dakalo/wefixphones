@@ -46,6 +46,13 @@ ul a{
     text-transform: capitalize;
     font-size: 1rem;
 }
+.bar{
+    display: none;
+}
+.bar i{
+    font-size: 25px;
+    color: #FF9800;
+}
 
 /*___Home Section___*/
 
@@ -345,10 +352,38 @@ footer{
     }
 }
 
-@media screen and (max-width: 625px) {
-    .header-container{
-        flex-direction: column;
-        justify-content: center;
-        line-height: 40px;
+@media screen and (max-width: 700px) {
+    .bar{
+        display: block;
+    }
+    /*.header-container{
+        position: relative;
+    }*/
+    .header-container ul{
+        min-height: 20px;
+        position: absolute;
+        top: 61px;
+        display: block;
+        text-align: center;
+        left: 0%;
+        gap: 1px;
+        background-color: #004C99;
+        transition: ease-in-out 0.5s;
+        align-items: center;
+        width: 100%;
+    }
+    #barNav{
+        display: none;
+    }
+    #barNav.active{
+        display: block;
+    }
+    .header-container ul a{
+        transition: ease-in-out 0.5s;
+        display: block;
+    }
+    .header-container ul a:hover{
+        background-color: #749ec8;
+        color: #E68900;
     }
 }
