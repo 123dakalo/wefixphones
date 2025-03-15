@@ -13,6 +13,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 1000;
+    border-bottom: 1px solid #E68900;
     top: 0%;
     left: 0%;
 }
@@ -362,7 +363,7 @@ footer{
     .header-container ul{
         min-height: 20px;
         position: absolute;
-        top: 61px;
+        top: 64px;
         display: block;
         text-align: center;
         left: 0%;
