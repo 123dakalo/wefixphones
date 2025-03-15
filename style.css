@@ -1,0 +1,354 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    background-color: #004C99;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+}
+.header-container{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    line-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo p{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+.logo span{
+    font-size: 1.5rem;
+    color: rgb(227, 190, 26);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+/*___Home Section___*/
+
+main{
+    margin-top: 60px;
+}
+.home-container{
+    position: relative;
+}
+.home-information{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 82%;
+    text-align: center;
+}
+.home-information h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+.home-information p{
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+.home-information a{
+    text-decoration: none;
+    background: #FF9800;
+    color: white;
+    margin-top: 15px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.home-information a:hover {
+    background: #E68900;
+}
+
+.home-container img{
+    height: 530px;
+    width: 100%;
+    filter: brightness(0.4);
+    object-fit: cover;
+}
+
+/*___About us Section___*/
+
+.aboutus-section{
+    min-height: 400px;
+}
+.aboutus-container{
+    width: 82%;
+    margin: auto;
+}
+.aboutus-container h1{
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    color: #007BFF;
+}
+.aboutus-flex-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.aboutus-img-flex{
+    width: 48%;
+}
+.aboutus-img-flex img{
+    width: 100%;
+    height: 350px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+.aboutus-info-para{
+    width: 48%;
+}
+.aboutus-info-para{
+    height: 350px;
+    padding: 20px;
+    border-bottom: 1.5px solid #004C99;
+}
+.aboutus-info-para h2{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333333;
+}
+.aboutus-info-para p{
+    font-size: 1rem;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #333333;
+}
+
+/* Service Section*/
+
+.service-section{
+    min-height: 200px;
+    background-color: #F0F0F0;
+}
+.service-sec-cont{
+    padding: 40px 0;
+    width: 83%;
+    margin: auto;
+}
+.service-head h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    color: #007BFF;
+}
+.service-head{
+    text-align: center;
+}
+.para{
+    margin-bottom: 50px;
+}
+.service-head p{
+    font-size: 1rem;
+    color: #333333;
+    font-weight: 500;
+}
+.service-middle-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-card{
+    width: 24%;
+    height: 280px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #004C99;
+    border-radius: 10px;
+}
+.service-card i{
+    font-size: 3rem;
+    color: #007BFF;
+}
+.service-card h3{
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+/*CONTACT ME SECTION*/
+
+.contact-section {
+    min-height: 100vh;
+    padding-bottom: 30px;
+    background-color: #121212;
+    color: #fff;
+}
+.contact-container {
+    display: flex;
+    background: #222;
+    width: 83%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contact-form{
+    width: 45%;
+}
+.contact-details{
+    width: 45%;
+}
+.map{
+    margin-top: 30px;
+}
+.map iframe{
+    width: 100%;
+    height: 160px;
+}
+.contact-form h2, .contact-details h2, .map h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-form button:hover {
+    background: #0056b3;
+}
+.contact-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.social-links a {
+    color: #007BFF;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Footer code*/
+
+footer{
+    background-color: #004C99;
+}
+.footer-container{
+    width: 83%;
+    margin: auto;
+    line-height: 60px;
+}
+.footer-container p{
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+
+/* Media queries*/
+
+@media screen and (max-width: 1206px) {
+    .service-middle-cont{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .service-card{
+        width: 45%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 934px) {
+    .aboutus-flex-cont{
+        flex-direction: column;
+    }
+    .aboutus-img-flex{
+        width: 100%;
+    }
+    .aboutus-info-para{
+        width: 100%;
+    }
+    .aboutus-info-para{
+        height: auto;
+        padding: 20px;
+        border-bottom: 1.5px solid #004C99;
+    }
+    .call{
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .service-card{
+        width: 100%;
+        height: auto;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact-details{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .header-container{
+        flex-direction: column;
+        justify-content: center;
+        line-height: 40px;
+    }
+}
