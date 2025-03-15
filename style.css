@@ -102,7 +102,7 @@ main{
 }
 
 .home-container img{
-    height: 600px;
+    height: 530px;
     width: 100%;
     filter: brightness(0.4);
     object-fit: cover;
@@ -391,5 +391,13 @@ footer{
     .header-container ul a:hover{
         background-color: #749ec8;
         color: #E68900;
+    }
+}
+@media screen and (max-width: 320px) {
+    .home-container img{
+        height: 630px;
+        width: 100%;
+        filter: brightness(0.4);
+        object-fit: cover;
     }
 }
